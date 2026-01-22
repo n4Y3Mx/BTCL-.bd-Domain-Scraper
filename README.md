@@ -87,7 +87,7 @@ Start checking the availability of domains from the generated wordlist.
 
 Run:
 ```bash
-python scraper.py
+python mainChecker.py
 ```
 
 The script will prompt you for:
