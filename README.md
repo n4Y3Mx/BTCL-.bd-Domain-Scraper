@@ -29,12 +29,12 @@ Follow these steps to set up the environment:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/n4y3mx/BTCL-Scraper.git](https://github.com/n4y3mx/BTCL-Scraper.git)
-   cd BTCL-Scraper
+   cd BTCL-Scraper   ```
    
 **Install dependencies:**
 ```bash
 pip install playwright
-playwright install chromium
+playwright install chromium  ```
 
  How to Use / ব্যবহারের নিয়ম
  Step One: Generate Wordlist (লিস্ট তৈরি করা)
