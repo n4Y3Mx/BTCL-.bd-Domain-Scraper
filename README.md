@@ -4,9 +4,8 @@
 
 ---
 
-## 📝 Description (English)
+##  Description (English)
 The **BTCL .bd Domain Scraper** is a high-performance, asynchronous automation tool designed to check the availability of `.bd` domains directly from the official **Bangladesh Telecommunications Company Limited (BTCL)** portal. It includes a specialized **Wordlist Generator** for bulk domain exploration.
-
 ### ✨ Key Features
 * **Multi-Tab Concurrency:** Run multiple browser instances (tabs) simultaneously to maximize speed.
 * **Wise Synchronization:** Custom logic ensures the script waits for the specific domain's result to render before scraping, preventing data mismatch.
@@ -15,7 +14,6 @@ The **BTCL .bd Domain Scraper** is a high-performance, asynchronous automation t
 
 ---
 
-## 🇧🇩 টুলটির বর্ণনা (Bengali)
 এটি একটি হাই-স্পিড ডোমেইন স্ক্র্যাপার এবং ওয়ার্ডলিস্ট জেনারেটর। এর মাধ্যমে আপনি কয়েক হাজার ডোমেইন একসাথে চেক করতে পারবেন।
 
 ### 🛠 প্রধান বৈশিষ্ট্যসমূহ:
@@ -28,24 +26,21 @@ The **BTCL .bd Domain Scraper** is a high-performance, asynchronous automation t
 
 ## ⚙️ Installation
 Follow these steps to set up the environment:
-
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/n4y3mx/BTCL-Scraper.git](https://github.com/n4y3mx/BTCL-Scraper.git)
    cd BTCL-Scraper
-Install dependencies:
-
-Bash
+   
+**Install dependencies:**
+```bash
 pip install playwright
-Install Browser Binaries:
-
-Bash
 playwright install chromium
-🚀 How to Use / ব্যবহারের নিয়ম
-1️⃣ Step One: Generate Wordlist (লিস্ট তৈরি করা)
+
+ How to Use / ব্যবহারের নিয়ম
+ Step One: Generate Wordlist (লিস্ট তৈরি করা)
 To create a custom list (e.g., all 3-character combinations), use the following command: নির্দিষ্ট ক্যারেক্টার দিয়ে ডোমেইন লিস্ট বানাতে চাইলে:
 
-Bash
+```Bash
 python wordlist_generator.py -c qwertyuiopasdfghjklzxcvbnm -min 3 -max 3 -o N
 -c: Character set (অক্ষরগুলো)
 
@@ -53,10 +48,10 @@ python wordlist_generator.py -c qwertyuiopasdfghjklzxcvbnm -min 3 -max 3 -o N
 
 -o: Output prefix (ফাইলের নাম)
 
-2️⃣ Step Two: Run Scraper (ডোমেইন চেক করা)
+ Step Two: Run Scraper (ডোমেইন চেক করা)
 Start checking the availability of your list: ডোমেইন এভেইলিবিলিটি চেক শুরু করতে:
 
-Bash
+```Bash
 python scraper.py
 Enter the filename you generated in step one (e.g., N.txt).
 
